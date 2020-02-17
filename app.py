@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib
 import io
 import base64
-import re
 from nltk.stem import WordNetLemmatizer 
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer

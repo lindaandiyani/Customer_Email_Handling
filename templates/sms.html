@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+<div class="container">
+        <form role="form" id="isi-sms" action="http://localhost:5000/sms" method="POST">
+                    <br>
+                    <div class="starter-template">
+                        <h2>Message Classification</h2>
+                    </div>
+                    <br><br>
+                  	<div class="row">
+                  		<div class="col-md-12">
+                  		<div class="form-group">
+                            <label for="smsform">Let's Get Started !! Type Your Message Here in English</label>
+                            <textarea class="form-control textarea" rows="3" maxlength="500" name="sms" id="smsform" autofocus="" placeholder="Type Here . . . . ."></textarea>
+                  		</div>
+                  	</div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                  <button id="button-analisis" type="submit" class="btn btn-outline-info">Analysis !</button>
+                  </div>
+                  </div>
+        </form>
+    </div>
+</center>
+{% endblock content %}

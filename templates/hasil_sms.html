@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+    <center>
+    <div class="starter-template">    
+        <br>
+        <br>
+        <br>
+    <h1>The Result of Your Message is : <b>{{result}}</b></h1>
+    </div>
+        <br>
+        <a href="{{ url_for('sms') }}" class="btn btn-primary btn-sm active" role="button" aria-pressed="false">Analysis Again</a>
+        <a href="{{ url_for('home') }}" class="btn btn-secondary btn-sm active" role="button" aria-pressed="false   ">Back to Home</a>
+        <br>
+        <br>
+    <img src="{{graph}}" align='middle'/>
+    <br>
+    </form>
+    </center>
+{% endblock content %}

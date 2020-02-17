@@ -33,18 +33,18 @@ Several machine learning are used and compared to evaluate the model. From model
 The components for this web app can be summarized as several section:
 
 1. **Homepage**  
-![Homepage](Image/Home.png)
+![Homepage](image/Home.png)
 
 2. **SPAM Message Classification**  
-![Spam SMS Filter Page](Image/Message_analysis.pngg)  
-![Spam SMS Filter Page](Image/hasil_sms.png)  
+![Spam SMS Filter Page](image/Message_analysis.png)  
+![Spam SMS Filter Page](image/hasil_sms.png)  
 
 3. **Tweet Analysis**  
-![Spam SMS Filter Page](Image/twitter_analysis.png)  
-![Spam SMS Filter Page](Image/hasil_tweet.png)  
+![Spam SMS Filter Page](image/twitter_analysis.png)  
+![Spam SMS Filter Page](image/hasil_tweet.png)  
 
 4. **About Page**  
-![Spam SMS Filter Page](Image/about.png)
+![Spam SMS Filter Page](image/about.png)
 
 Thats all for this final project, feel free to **suggest** to **email below** and let me know how can this project make working even better.
 

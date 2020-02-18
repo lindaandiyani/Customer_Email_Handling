@@ -55,7 +55,7 @@ def sms():
         plt.close()
         plt.figure(figsize=(5,5))
         plt.title('Probability')
-        plt.pie(x=probability_Message, autopct='%1.1f%%', pctdistance=1.1, labeldistance=1.3)
+        plt.pie(x=probability_Message, autopct='%1.1f%%',colors=['#a278b5','#f6c3e5'], pctdistance=1.1, labeldistance=1.3)
         plt.legend(labels)
         plt.tight_layout()
 
@@ -84,7 +84,7 @@ def tweet():
         plt.close()
         plt.figure(figsize=(5,5))
         plt.title('Probabilitas analisa tweet')
-        plt.pie(x=probability_tweet, autopct='%1.1f%%', pctdistance=1.1, labeldistance=1.3)
+        plt.pie(x=probability_tweet, autopct='%1.1f%%',colors=['#381460','#b2dffb','#e7a4e4','#a278b5','#f6c3e5'], pctdistance=1.1, labeldistance=1.3)
         plt.legend(labels)
         plt.tight_layout()
 

@@ -2,7 +2,7 @@
 
 ## SPAM and Tweet Emotion Analysis with NLP ##
 
-This repository contain the final project as one of the requirements to fullfill in [Purwadhika](https://purwadhika.com/jc-data-science) Job Connector - Data Science Program. Theme of this project is to create local web and using [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) procedures to create app that can classify [SMS](https://en.wikipedia.org/wiki/SMS) as SPAM, or HAM(no SPAM) and also app that can classify the emotion (happy, angry, sad, fear, love) from tweet from [Twitter](https://twitter.com/).  
+This repository contain the final project as one of the requirements to fullfill in [Purwadhika](https://purwadhika.com/jc-data-science) Job Connector - Data Science Program. Theme of this project is to create local web and using [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) procedures to create app that can classify [SMS](https://en.wikipedia.org/wiki/SMS) as SPAM, or HAM(no SPAM) and also app that can classify the emotion (happy, angry, sad, fear, love).  
 Dataset used to make this project are:
 
 1. [Spam Filter Dataset](https://www.kaggle.com/team-ai/spam-text-message-classification).

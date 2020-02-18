@@ -2,7 +2,7 @@
 {% block content %}
     <center>
     <div class="starter-template">
-    <h2>Hasil dari analisa Tweet anda mengarah ke emosi - <b>{{result.capitalize()}}</b></h2>
+    <h2>Berdasarkan analisa, emosi custumor cenderung ke- <b>{{result.capitalize()}}</b></h2>
     </div>
             <a href="{{ url_for('tweet') }}" class="btn btn-outline-info" role="button" aria-pressed="false">Analisa Lagi</a>
             <a href="{{ url_for('home') }}" class="btn btn-secondary btn-sm active" role="button" aria-pressed="false   ">Kembali ke Home</a>

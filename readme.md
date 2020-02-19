@@ -27,9 +27,9 @@ The python libraries used to make this project are:
 
 Several machine learning are used and compared to evaluate the model. From model evaluation, the **machine learning** algorithms I used for model for this app are:
 
-- Random Forest Classifier - [RandomForest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) for SPAM filtering app.
+- Support Vector Classification - [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) for SPAM filtering app.
 
-- Multinomial Naive Bayes - [MultinomialNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html) for body email emotion detection app.
+- Support Vector Classification - [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) for body email emotion detection app.
 
 
 The components for this web app can be summarized as several section:

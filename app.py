@@ -14,6 +14,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import wordnet
 from kbbi import KBBI
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+import string
 
 
 matplotlib.use('agg')
@@ -30,7 +32,14 @@ def preprocess(document):
     for pos in [wordnet.NOUN, wordnet.VERB, wordnet.ADJ, wordnet.ADV]:
         words = [wordnet_lemmatizer.lemmatize(x, pos) for x in words]
     return " ".join(words)
-
+def text_process(mess):
+    nopunc = [char for char in mess if char not in string.punctuation]
+    nopunc = ''.join(nopunc)
+    nopunc= nopunc.lower()
+    factory = StemmerFactory()
+    stemmer = factory.create_stemmer()
+    output   = stemmer.stem(nopunc)
+    return "".join(output)
 
 @app.route('/')
 @app.route('/home')
@@ -53,6 +62,7 @@ def sms():
                     return render_template('bahasa.html')
                     break
             except:
+                isi_sms= preprocess(isi_sms)
                 result = model_spam.predict([isi_sms])
                 if result == [0]:
                     result = "Non Spam Message"
@@ -89,6 +99,7 @@ def tweet():
         if isi_tweet == "":
             return render_template('error2.html')
         else:
+            isi_tweet= text_process(isi_tweet)
             result = model_twitter.predict([isi_tweet])
             result = result[0]
             probability_tweet = model_twitter.predict_proba([isi_tweet])
@@ -118,6 +129,6 @@ def about():
 
 
 if __name__ == "__main__":
-    model_spam = joblib.load('model_Message_Tantun')
-    model_twitter = joblib.load('model_multinomial_twitter')
+    model_spam = joblib.load('model_Message_Fiks')
+    model_twitter = joblib.load('model_subject_fiks')
     app.run(debug=True)
